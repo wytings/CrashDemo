@@ -37,8 +37,7 @@ public abstract class BaseActivity extends Activity {
         addButton("make a crash", android.R.color.holo_red_light, new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String s = null;
-                s.length();
+                throw new RuntimeException("a test exception for app");
             }
         });
         addButton("App.exit()", android.R.color.holo_orange_light, new View.OnClickListener() {
